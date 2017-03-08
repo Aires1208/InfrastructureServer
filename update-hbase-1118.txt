@@ -1,0 +1,91 @@
+create 'ServiceTraceIdIndex', { NAME => "T", TTL => 31536000 }
+
+create 'InstanceTraceIdIndex', { NAME => "T", TTL => 31536000 }
+
+disable 'AgentInfo'
+alter 'AgentInfo', { NAME => 'Info', TTL => 31536000 }
+enable 'AgentInfo'
+
+disable 'AgentStat'
+alter 'AgentStat', { NAME => 'S', TTL => 15552000 }
+enable 'AgentStat'
+
+disable 'ApplicationIndex'
+alter 'ApplicationIndex', { NAME => 'Agents', TTL => 31536000 }
+enable 'ApplicationIndex'
+
+disable 'AgentLifeCycle'
+alter 'AgentLifeCycle', { NAME => 'S', TTL => 15552000 }
+enable 'AgentLifeCycle'
+
+disable 'AgentEvent'
+alter 'AgentEvent', { NAME => 'E', TTL => 15552000 }
+enable 'AgentEvent'
+
+disable 'StringMetaData'
+alter 'StringMetaData', { NAME => 'Str', TTL => 31536000 }
+enable 'StringMetaData'
+
+disable 'ApiMetaData'
+alter 'ApiMetaData', { NAME => 'Api', TTL => 31536000 }
+enable 'ApiMetaData'
+
+disable 'SqlMetaData_Ver2'
+alter 'SqlMetaData_Ver2', { NAME => 'Sql', TTL => 31536000 }
+enable 'SqlMetaData_Ver2'
+
+disable 'Traces'
+alter 'Traces', { NAME => 'S', TTL => 31536000, VERSIONS => 5 }, { NAME => 'A', TTL => 31536000, VERSIONS => 5 }, { NAME => 'T', TTL => 31536000, VERSIONS => 5 }
+enable 'Traces'
+
+disable 'ApplicationTraceIndex'
+alter 'ApplicationTraceIndex', { NAME => 'I', TTL => 31536000  }
+enable 'ApplicationTraceIndex'
+
+disable 'ServiceIndex'
+alter 'ServiceIndex', { NAME => 'N', TTL => 31536000 }, { NAME => 'L', TTL => 31536000 }
+enable 'ServiceIndex'
+
+disable 'InstanceIndex'
+alter 'InstanceIndex', { NAME => 'N', TTL => 31536000 }, { NAME => 'L', TTL => 31536000 }
+enable 'InstanceIndex'
+
+disable 'HistoryEvent'
+alter 'HistoryEvent', { NAME => 'E', TTL => 31536000 }
+enable 'HistoryEvent'
+
+disable 'ActiveEvent'
+alter 'ActiveEvent', { NAME => 'E', TTL => 31536000 }
+enable 'ActiveEvent'
+
+disable 'TransactionList'
+alter 'TransactionList', { NAME => 'NAME', TTL => 31536000 }
+enable 'TransactionList'
+
+disable 'ServiceTraceIdIndex'
+alter 'ServiceTraceIdIndex', { NAME => "T", TTL => 31536000 }
+enable 'ServiceTraceIdIndex'
+
+disable 'InstanceTraceIdIndex'
+alter 'InstanceTraceIdIndex', { NAME => "T", TTL => 31536000 }
+enable 'InstanceTraceIdIndex'
+
+disable 'Policy'
+alter 'Policy', { NAME => 'P', TTL => 31536000 }
+enable 'Policy'
+
+disable 'PolicyAction'
+alter 'PolicyAction', { NAME => 'P', TTL => 31536000 }
+enable 'PolicyAction'
+
+disable 'RegisterInfo'
+alter 'RegisterInfo', { NAME => 'inputInfo', TTL => 31536000 }
+enable 'RegisterInfo'
+
+disable 'OSInfo'
+alter 'OSInfo', { NAME => 'os', TTL => 31536000 }
+enable 'OSInfo'
+
+disable 'MonitorInfo'
+alter 'MonitorInfo', { NAME => 'mysql', TTL => 31536000 }
+enable 'MonitorInfo'

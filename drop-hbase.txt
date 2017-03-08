@@ -1,0 +1,88 @@
+
+disable 'AgentInfo'
+disable 'AgentStat'
+disable 'AgentLifeCycle'
+disable 'AgentEvent'
+disable 'ApplicationIndex'
+
+disable 'StringMetaData'
+disable 'ApiMetaData'
+
+disable 'SqlMetaData_Ver2'
+
+disable 'ApplicationTraceIndex'
+disable 'Traces'
+
+disable 'ServiceIndex'
+disable 'InstanceIndex'
+
+disable 'TransactionList'
+
+disable 'ServiceTraceIdIndex'
+disable 'InstanceTraceIdIndex'
+
+disable 'HistoryEvent'
+disable 'ActiveEvent'
+
+disable 'ZipkinTraces'
+
+disable 'NFV_Msgs'
+disable 'NFV_Insts'
+disable 'NFV_subflows'
+
+disable 'Policy'
+disable 'PolicyAction'
+disable 'HistoryEvent'
+disable 'ActiveEvent'
+
+disable 'RegisterInfo'
+disable 'OSInfo'
+disable 'MonitorInfo'
+disable 'RpcStatistic'
+disable 'KafkaMonitorInfo'
+
+
+drop 'AgentInfo'
+drop 'AgentStat'
+drop 'AgentLifeCycle'
+drop 'AgentEvent'
+drop 'ApplicationIndex'
+
+drop 'StringMetaData'
+drop 'ApiMetaData'
+
+drop 'SqlMetaData_Ver2'
+
+drop 'ApplicationTraceIndex'
+drop 'Traces'
+
+drop 'ServiceIndex'
+drop 'InstanceIndex'
+drop 'TransactionList'
+
+drop 'ServiceTraceIdIndex'
+drop 'InstanceTraceIdIndex'
+
+drop 'HistoryEvent'
+drop 'ActiveEvent'
+
+drop 'ZipkinTraces'
+
+drop 'NFV_Msgs'
+drop 'NFV_Insts'
+drop 'NFV_subflows'
+
+drop 'Policy'
+drop 'PolicyAction'
+drop 'HistoryEvent'
+drop 'ActiveEvent'
+
+drop 'RegisterInfo'
+drop 'OSInfo'
+drop 'MonitorInfo'
+drop 'RpcStatistic'
+drop 'KafkaMonitorInfo'
+
+list
+
+exit
